@@ -1,0 +1,103 @@
+body, html {
+	height: 100%;
+}
+
+body {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+}
+
+/*  auto - автоматически вытягивается*/
+.content {
+	flex: 1 0 auto;
+	padding: 20px;	
+	background-color: green;
+}
+
+.data {
+	height: 1500px;
+}
+
+/*  c flex-shrink: 0; футер прибит к низу пока мало контента, когда его много - он смещается вниз вместе с контентом */
+.footer {
+	flex-shrink: 0;
+	padding: 20px;
+	background-color: red;
+}
+
+/*   display: flex означает что данный контейнер будет работать как флекс-контейнер
+	justify-content: space-between - если у нас 2 элемента, они прибиваются к краям. Если их 3 и более он их распределяет +- по странице, если сделать center - то блоки летят в центр
+	align-items: flex-end  чтобы прибить элементы к нижнеё границе блока
+margin-bottom: 20px; чтобы оттолкнуть контент	*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 20px;
+}
+
+/*  с нулевыми параметрами избавляемся от внешних и внутренних отступов + избавляемся от буллетов в ул */
+.main-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+/*  отображаем как блоки с внутренним отступом в 20 пикселей */
+.main-nav li a {
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+
+.main-nav li:not(:first-child) {
+	margin-left: 10px;
+}
+
+/*   блок шириной 900 пикслеей располагается по центру
+	flex-direction: column; чтобы распологались колонкой (по вертикали)
+	flex-wrap: wrap; - грубо говоря чтобы флекс переносил элементы если не хватает ширины оборачивая их
+ */
+.elements {
+	width: 900px;
+	margin: 0 auto;
+	background-color: pink;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.item {
+	flex-basis: 250px;
+	background-color: blue;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

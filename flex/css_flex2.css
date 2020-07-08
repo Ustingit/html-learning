@@ -26,7 +26,7 @@ html {
 	align-items: center;
 }
 
-.main-overlay {
+.main-overlay, .call-to-action-overlay {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -252,12 +252,52 @@ html {
 	background-color: #6e45e2;
 }
 
+.call-to-action {
+	text-align: center;
+	position: relative;
+	padding: 15rem;
+	background: url(planet.jpg) no-repeat center;
+	background-size: cover;
+	color: #fff;
+}
 
+.call-to-action span {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	font-weight: 500;
+}
 
+.call-to-action h4 {
+	font-weight: 500;
+	font-size: 4.5rem;
+	margin: 1rem auto 2rem;
+}
 
+.wrap {
+	z-index: 2;
+	position: relative;
+}
 
+/*  transition: 0.2s;  плавность анимации */
+.cta-btn {
+	display: inline-block;
+	border: none;
+	background-color: #fff;
+	color: #c2c9db;
+	width: 19rem;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	height: 5rem;
+	margin: 1rem;
+	border-radius: 100px;
+	transition: 0.2s;
+}
 
-
+.cta-btn:hover {
+	background-color: #6e45e2;
+	cursor: pointer;
+}
 
 
 

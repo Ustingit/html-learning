@@ -126,6 +126,21 @@ body {
 	width: 70px;
 }
 
+.table {
+	background-color: #f9fafc;
+	height: 100vh;
+	min-height: 600px;
+}
+
+.table-header span {
+	text-transform: uppercase;
+	color: #9fa4af;
+	font-size: 1.4rem;
+}
+
+.table-header h2 {
+	color: #4f4f6f;
+}
 
 
 
